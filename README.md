@@ -39,11 +39,13 @@ The final step is to run `debuild -i -us -uc -b` in the root of the `indicator-a
 
 Open the terminal, copy, paste and run each command line below, one by one:
 
-`mkdir -p ~/.config/autostart`
-`cp /etc/xdg/autostart/indicator-application.desktop ~/.config/autostart/`
-`sed -i 's/^OnlyShowIn.*/OnlyShowIn=Unity;GNOME;Pantheon;/' ~/.config/autostart/indicator-application.desktop`
-`wget http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana/wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.deb`
-`sudo dpkg -i wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.deb`
+```sh
+$ mkdir -p ~/.config/autostart 
+$ cp /etc/xdg/autostart/indicator-application.desktop ~/.config/autostart/ 
+$ sed -i 's/^OnlyShowIn.*/OnlyShowIn=Unity;GNOME;Pantheon;/' ~/.config/autostart/indicator-application.desktop 
+$ wget http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana/wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.deb 
+$ sudo dpkg -i wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.deb
+```
 
 After that, just log off and login, and your favorite indicators will be there.
 
