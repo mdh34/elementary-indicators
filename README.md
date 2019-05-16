@@ -12,6 +12,9 @@ The `wingpanel-indicator-ayatana` package is no longer included in the standard 
 To install the packages, you can use a .deb installer like [Eddy](http://appcenter.elementary.io/com.github.donadigo.eddy/) or run `sudo dpkg -i filename` in your terminal.
 Once you've installed both packages, a reboot should get your indicators working in Pantheon.
 
+## Preventing updates
+To prevent Elementary from updating `indicator-application` and removing this patch you can put it on hold, just run `sudo apt-mark hold indicator-application` in your terminal.
+
 ## Patching indicator-application
 ### Update the .desktop
 First, download the source to a directory of your choice by running `bzr branch lp:indicator-application` in your terminal (you'll need the `bzr` package installed if you don't already)
