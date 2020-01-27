@@ -52,8 +52,10 @@ After that, just log off and login, and your favorite indicators will be there.
 ### Resolving the large space between icons
 One solution is to create a file in `~/.config/gtk-3.0/gtk.css` by adding the content below:
 
-`.composited-indicator {
+```sh
+.composited-indicator {
     padding: 0 2px;
 }
-`
+```
+
 It is a very simple solution that does not require re-editing the `app.css` associated with the theme (as root).
