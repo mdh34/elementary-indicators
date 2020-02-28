@@ -29,7 +29,7 @@ and save the file.
 ### Generate a patched .deb
 Now you can generate a patched .deb - the first step is to install the build dependencies by running:
 
-`sudo apt install debhelper dh-translations dh-autoreconf dbus-test-runner gnome-common xvfb libglib2.0-dev libgtk-3-dev libdbus-glib-1-dev libjson-glib-dev intltool libappindicator3-dev libindicator3-dev libdbusmenu-glib-dev libdbusmenu-gtk3-dev`
+`sudo apt install debhelper dh-translations dh-autoreconf dbus-test-runner gnome-common xvfb libglib2.0-dev libgtk-3-dev libdbus-glib-1-dev libjson-glib-dev intltool libappindicator3-dev libindicator3-dev libdbusmenu-glib-dev libdbusmenu-gtk3-dev devscripts`
 
 in your terminal.
 
